@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Frewing</string>
+    <string name="debug_dump_title">"复制xx应用私有文件"</string>
+    <string name="debug_dump_database_message">"您将要执行以下操作：1) 在内部存储设备中，创建包括本应用相关信息的数据库和sp文件的副本；2) 通过电子邮件发送该副本。从设备中成功复制该副本或在电子邮件送达之后，请务必及时删除该副本。"</string>
+    <string name="debug_dump_delete_button">"立即删除"</string>
+    <string name="debug_dump_start_button">"开始"</string>
+    <string name="debug_dump_email_sender_picker">"选择用于发送文件的程序"</string>
+    <string name="debug_dump_email_subject">"随附xx应用数据库"</string>
+    <string name="debug_dump_email_body">"附件是我的xx应用数据库，其中包含应用所有的重要信息，因此请谨慎处理。"</string>
+</resources>

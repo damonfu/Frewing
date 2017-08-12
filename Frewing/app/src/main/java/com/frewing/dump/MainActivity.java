@@ -1,9 +1,12 @@
 package com.frewing.dump;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+
+import com.frewing.dump.core.mail.MailActivity;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -20,6 +23,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        database.execSQL("INSERT INTO dump(prop,message) VALUES(?, ?)", new String[]{"text1", "message1"});
+        startActivity(new Intent(this, MailActivity.class));
+//        database.execSQL("INSERT INTO dump(prop,message) VALUES(?, ?)", new String[]{"text1", "message1"});
     }
 }

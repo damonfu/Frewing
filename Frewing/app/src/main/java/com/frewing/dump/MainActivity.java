@@ -23,7 +23,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        startActivity(new Intent(this, MailActivity.class));
-//        database.execSQL("INSERT INTO dump(prop,message) VALUES(?, ?)", new String[]{"text1", "message1"});
+//        startActivity(new Intent(this, MailActivity.class));
+        database.execSQL("INSERT INTO dump(prop,message) VALUES(?, ?)", new String[]{"text1", "message1"});
     }
 }

@@ -1,5 +1,6 @@
 package com.frewing.dump.core.mail;
 
+import java.io.File;
 import java.util.Date;
 import java.util.Properties;
 
@@ -116,9 +117,9 @@ public class Mail extends javax.mail.Authenticator {
         }
     }
 
-    public void addAttachment(String filename) throws Exception {
+    public void addAttachment(File file, String filename) throws Exception {
         BodyPart messageBodyPart = new MimeBodyPart();
-        DataSource source = new FileDataSource(filename);
+        DataSource source = new FileDataSource(file);
         messageBodyPart.setDataHandler(new DataHandler(source));
         messageBodyPart.setFileName(filename);
 

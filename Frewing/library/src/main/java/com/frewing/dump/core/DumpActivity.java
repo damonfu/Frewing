@@ -127,7 +127,7 @@ public class DumpActivity extends Activity implements OnClickListener, IMessage 
             email.m.set_to(recipients);
             email.m.set_subject("test2");
             File file = new File(new URI(uri.toString()));
-            email.m.addAttachment(file.getAbsolutePath());
+            email.m.addAttachment(file, "test.zip");
             email.execute();
         } catch (Exception e) {
             e.printStackTrace();
